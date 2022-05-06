@@ -1,0 +1,985 @@
+
+/*---------- Common ----------*/
+
+* {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover,
+a:active {
+  color: inherit;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+h2{
+  font-weight: normal;
+  font-size: 27px;
+  border-left: 3px solid #78c4ec;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin: 20px 0px;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background-image: url(../img/icon/buttonSpec.png);
+  background-size: 280px 80px;
+  background-position: bottom 2px;
+  color: #ffffff;
+  height: 80px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn img {
+  position: absolute;
+  right: 20px;
+  height: 27px;
+  width: auto;
+}
+
+.researchbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+label {
+  font-size:18px;
+  padding: 0px 15px 0px 0px;
+}
+/*---------- Common  End ----------*/
+
+/*---------- header ----------*/
+
+header {
+  display: flex;
+  padding: 0 10px;
+  background: #50687b;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  height: 100px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.logo img {
+  margin: 20px 0px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 140px;
+  height: auto;
+}
+.material-icons {
+  color: #ffffff;
+}
+
+.sp-menu {
+  margin-left: auto;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.sp-menu nav ul {
+  display: flex;
+}
+
+.sp-menu nav ul a {
+  width: 128px; 
+  text-align: center;
+  display: block;
+  transition-property: background;
+  transition-duration: .3s;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.favoritelistbtn  {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 6px;
+}
+
+
+.favoritelist {
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  margin: 8px 0px;
+}
+
+
+.favoritelist p {
+  margin: 0px 4px;
+}
+
+.favoritelist a {
+  width: auto;
+  height: auto;
+}
+
+.favoritelist img {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/*---------- header end ----------*/
+
+/*---------- overlay ----------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(80, 104, 123, 0.9);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  transition: all .3s ease 0s;
+}
+
+.overlay a:hover {
+  transform: scale(1.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.494);
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .3s;
+}
+.overlay.show li:nth-child(4) {
+  transition-delay: .4s;
+}
+.overlay.show li:nth-child(5) {
+  transition-delay: .5s;
+}
+.overlay.show li:nth-child(6) {
+  transition-delay: .6s;
+}
+
+.pc-menu {
+  display: none;
+}
+
+/*---------- overlay End ----------*/
+
+/* ---------- newcar ----------  */
+
+.newcar {
+  margin: 80px 0px;
+}
+
+.newcar h1 {
+  text-align: center;
+}
+
+.newcar p {
+  text-align: center;
+  color: #b3b1b1;
+}
+
+/* ---------- recommend ----------  */
+
+.recommend {
+  margin: 32px 16px 50px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carphots {
+  width: auto;
+  height: auto;
+}
+
+.picture {
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 0px 8px;
+  height: auto;
+  width: auto;
+}
+
+.picture img {
+  width: auto;
+  height: auto;
+  padding-bottom: 10;
+}
+
+.favorite {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.favorite p {
+  font-size: 90%;
+}
+
+.favoritebtn {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 115px;
+  height: 50px;
+}
+
+.favoritebtn img {
+  margin-right: 5px;
+  width: 25%;
+  height: auto;
+}
+
+
+.favoritebtn p {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.look {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0px;
+  border: 2px solid #b3b1b1ac;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* font-size: 20px; */
+  color: black;
+}
+
+
+.look a {
+  text-decoration: none;
+  color: black;
+}
+
+.look img {
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  height: 25px;
+  width: auto;
+}
+
+/* ---------- recommend End ----------  */
+
+/* ---------- research ---------- */
+
+.research {
+  padding-top: 100px;
+}
+
+.research h1{
+  color: #a09b9b;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.research h2 {
+  margin-left: 10px;
+}
+
+/* ---------- research End ---------- */
+
+/* ---------- leftarea ---------- */
+
+.leftarea {
+  padding: 0px 10px 20px 10px;
+}
+
+.leftbg {
+  background: #b3b1b11d;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.carmodel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.carmodelcheck {
+  width: auto;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+} 
+
+.carmodelcheck p {
+  padding-top: 2px;
+  font-size: 100%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- leftarea End ---------- */
+
+/* ---------- Pulldown ---------- */
+
+select {
+  height: 35px;
+  padding-left: 5px;
+  width: 140px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none; 
+}
+
+select {
+  background-image: url(../img/icon/arrowDown.png);
+  background-position: right 3px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #b3b1b1ac;
+}
+
+
+.displacement {
+  margin-left: 25px;
+}
+
+.displacement_left {
+  margin-right: 17px;
+}
+
+/* ---------- Pulldown ---------- */
+
+/* --------- Toggle button--------- */
+
+.togglebtn {
+  display: flex;
+  padding-left: 25px;
+}
+
+.can-toggle {
+  position: relative;
+  padding-left: 20px;
+}
+.can-toggle *, .can-toggle *:before, .can-toggle *:after {
+  box-sizing: border-box;
+}
+.can-toggle input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.can-toggle input[type=checkbox][disabled] ~ label {
+  pointer-events: none;
+}
+.can-toggle input[type=checkbox][disabled] ~ label .can-toggle__switch {
+  opacity: 0.4;
+}
+.can-toggle input[type=checkbox]:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type=checkbox]:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.can-toggle label .can-toggle__switch {
+  position: relative;
+}
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: #66a9cc;
+  transform: translate3d(0, 0, 0);
+}
+
+.can-toggle input[type=checkbox]:focus ~ label .can-toggle__switch, .can-toggle input[type=checkbox]:hover ~ label .can-toggle__switch {
+  background-color: white;
+}
+
+
+.can-toggle label .can-toggle__switch {
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: white;
+  border: 1px solid #b3b1b1ac;
+}
+.can-toggle label .can-toggle__switch:before {
+  color: #b3b1b1ac;
+}
+.can-toggle label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: white;
+  border: 1px solid #b3b1b1ac;
+}
+.can-toggle input[type=checkbox]:focus ~ label .can-toggle__switch:after, .can-toggle input[type=checkbox]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle input[type=checkbox]:checked ~ label .can-toggle__switch:after {
+  transform: translate3d(70px, 0, 0);
+}
+
+.can-toggle label {
+  font-size: 12px;
+}
+.can-toggle label .can-toggle__switch {
+  height: 36px;
+  flex: 0 0 140px;
+  border-radius: 15px;
+}
+.can-toggle label .can-toggle__switch:before {
+  left: 67px;
+  font-size: 12px;
+  line-height: 32px;
+  width: 70px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: -1px;
+  left: -1px;
+  border-radius: 15px;
+  width: 70px;
+  height: 36px;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+/* --------- Toggle button End --------- */
+
+/* ---------- Right area ---------- */
+
+.rightarea{
+  padding: 0px 10px;
+}
+
+.makerresearch {
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 7%;
+}
+
+.carmodel_label {
+  margin-right: 35px;
+}
+
+.displacement_right {
+  margin-left: 13px;
+}
+
+.rightcheckbox {
+  padding: 30px 30px 0px 30px;
+  background: #b3b1b11d;
+}
+
+.freeresearch{
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.freeresearch h1 {
+  padding: 10px 0px 5px 10px;
+}
+
+.freetext {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.freetext input {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #b3b1b1ac;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+/* ---------- Right area End ---------- */
+
+/* ---------- Notice area ---------- */
+
+.noticearea {
+  max-width: 960px;
+  align-items: center;
+  padding: 100px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.noticetitle {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  width: 100%;
+  border-bottom: 4px solid #406a7f;
+  align-items: center;
+}
+
+.noticetitle h1 {
+  margin-bottom: 20px;
+}
+
+.btn:hover{
+  color:#ffffff
+}
+
+.details {
+  display: flex;
+  border-bottom: 2px solid #406a7f;
+  align-items: center;
+}
+
+.contents {
+  color: #b3b1b1;
+  flex: 1;
+  border-left: 4px solid #406a7f;
+  margin: 8px 0px 8px 5px;
+}
+
+.contents p {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.contents a {
+  color: #b3b1b1;
+}
+
+.contentsimg {
+  width: 150%;
+  height: auto;
+  padding-right: 10px;
+}
+
+/* ---------- Notice area End ---------- */
+
+/* ---------- Footer menu ---------- */
+
+.footermenu {
+  background: #1a2e3e96;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footermenu img {
+  height: 60px;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+.address {
+  padding-right: 70px;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+.address p {
+  line-height: 17px;
+}
+
+.menudetail {
+  display: flex;
+  border-left: 4px solid rgba(24, 119, 196, 0.39);
+}
+
+.menudetail ul {
+  margin: 50px 0 20px 0;
+  padding: 0px 20px;
+}
+
+.menudetail ul li {
+  list-style: none;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+
+/* .menudetail ul + ul {
+  padding-right: 120px;
+} */
+
+.menudetail ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---------- Footer menu End ---------- */
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: #ddfaff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+/* ---------- Footer ---------- */
+
+/*---------- To_top ----------*/
+#to_top {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+#to_top.scrolled {
+  opacity: 1;
+}
+
+/*---------- To_top End ----------*/
+
+
+/* ---------- Swiper1 ---------- */
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon/ellipseInactive.png) transparent;
+	opacity: 0.5;
+}
+
+/* 現在のスライドのスタイル */
+.swiper-pagination-bullet-active {
+  width: 20px;
+	height: 20px;
+	background: url(../img/icon/ellipseActive.png);
+}
+
+.swiper1,
+.swiper-slide1 {
+   max-height: 80vh;
+   height: 50vw;
+}
+
+.slide1 > img {
+   object-fit: cover; 
+   width: 100%;
+   height: 100%;
+}
+
+
+/* ---------- Swiper1 End ---------- */
+
+
+
+/* ---------- Swiper2 ---------- */
+
+.swiper2 {
+  padding: 0px 20px;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+  margin-top: -50px;
+  margin-left: -10px;
+  margin-right: -15px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 65px;
+  margin: auto;
+  width: 50px;
+}
+
+.swiper-button-prev:after {
+  background-image: url(../img/icon/arrowLeftSlide.png);
+}
+
+.swiper-button-next:after {
+  background-image: url(../img/icon/arrowRightSlide.png);
+}
+
+/* ---------- Swiper2 End ---------- */
+
+
+/* ---------- Media queries ---------- */
+
+@media (min-width: 768px) {
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .pc-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+
+  .pc-menu a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    transition-property: background;
+    transition-duration: .3s;
+  }
+
+  .pc-menubtn a {
+    width: 128px;
+  }
+
+  .pc-menu a:hover {
+    background: #7194b0;
+    color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.494);
+  }
+
+  .sp-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .pc-menubtn a {
+    width: 119px;
+    font-size: 93%;
+  }
+}
+
+@media (min-width: 540px)  and (max-width: 645px) {
+  .favorite p {
+    font-size: 12px;
+  }
+
+  .favoritebtn  {
+    width: 40%;
+  }
+
+  .favoritebtn p {
+    font-size: 9px;
+    margin-left: 4px;
+  }
+
+  .favoritebtn img {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 767px)  and (max-width: 991px) {
+  .carmodelselect {
+    margin-top: 20px;
+  }
+
+  .rightcheckbox {
+    margin: 40px 0px;
+  }
+
+  .makerresearch {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 992px)  and (max-width: 1199px) {
+  .leftoption {
+    padding: 15px 0px 40px 0px;
+  }
+}
+
+@media (min-width: 1140px)  and (max-width: 1250px) {
+  .favorite p {
+    font-size: 13px;
+  }
+
+  .favoritebtn  {
+    width: 40%;
+  }
+
+  .favoritebtn p {
+    font-size: 11px;
+    margin-left: 4px;
+  }
+
+  .favoritebtn img {
+    margin-right: 2px;
+  }
+}
+
+@media (min-width: 1200px)  and (max-width: 1399px) {
+  .displacement_left {
+    padding-right: 5px;
+  }
+
+  .leftoption {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menudetail ul {
+    margin: 50px 0px 20px 0px;
+    padding: 0px 5px;
+  } 
+  
+  .address {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+/* ---------- Media queries End---------- */
+
+.check-box {
+  cursor: pointer;
+  padding: 0;
+}
+.check-text {
+  display: flex;
+}
+.check-box input {
+  display: none; 
+}
+.check-box input + .check-text::before {
+  background-image: url(../img/icon/checkbox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+.check-box input:checked + .check-text::before {
+  background-image: url(../img/icon/oncheckbox.png);
+}
+
+

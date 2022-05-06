@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Tasting Cars</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="Cars">
+<meta name="Description" content="Tasting the cars">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<!-- <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="icon" href="assets/img/icon/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/cssreset-min.css"/>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <div class="logo">
+        <img src="assets/img/logo/tc-white-logo.svg" alt="logo">
+      </div>
+  </a>
+ 
+    <div class="pc-menu">
+      <div class="navigation">
+        <div class="favoritelist">
+        <a href="#" >
+        <div class="favoritelistbtn">
+        <p>お気に入り一覧</p>
+        
+        <img src="assets/img/icon/arrowButton.png" 
+        alt="右向きアイコン">
+      </div>
+      </a>
+      </div>
+
+      <nav class="pc-menubtn">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">検索</a></li>
+          <li><a href="#">お気に入り</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">サービスについて</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+      
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+   
+  </header>
+
+  <div id="target"></div>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#" class="sp-parts">お気に入り一覧</a></li>
+        <li><a href="#" class="sp-parts">HOME</a></li>
+        <li><a href="#" class="sp-parts">検索</a></li>
+        <li><a href="#" class="sp-parts">お気に入り</a></li>
+        <li><a href="#" class="sp-parts">お知らせ</a></li>
+        <li><a href="#" class="sp-parts">サービスについて</a></li>
+      </ul>
+    </nav>
+  </div>
+    
+
+
+<!-- Swiper1 START -->
+  <div class="swiper1">
+      <div class="swiper-wrapper">
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car1.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car2.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car3.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car4.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car5.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car6.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car7.jpg"
+      class="top-car img-responsive">
+    </div>
+		<div class="swiper-slide slide1">
+      <img src="assets/img/catalog/slideshow/top/car8.jpg"
+      class="top-car img-responsive">
+    </div>
+    <div class="swiper-pagination my-swiper-pagination"></div>
+	</div>
+  </div>
+<!-- Swiper1 END -->
+
+
+    <div class="newcar">
+      <h1>オススメの新型車(仮)</h1>
+      <p>説明文が入ります。ダミーテキスト<br>
+        ダミーテキストダミーテキストダミーテキスト</p>
+    </div>
+    
+<!-- Swiper2 START -->
+    <div class="swiper swiper2">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="assets/img/catalog/slideshow/car1.png"
+            alt="car1"
+            class="carphots img-responsive">
+            <div class="favorite">
+              <p>マツダ<br>CX-5 XD（4WD）</p>
+              <div class="favoritebtn" id="button1">
+                <p>お気に入りに<br>追加</p>
+                <img src="assets/img/icon/pinUncheck.png" alt="pin" class="img-responsive">
+              </div>
+            </div>
+            <a href="#">
+            <div class="look">
+            詳細を見る
+                <img src="assets/img/icon/arrowRightSlideButton.png">
+              </div>
+            </a>
+      </div>
+    </div>
+        
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="assets/img/catalog/slideshow/car2.png"
+          alt="car2"
+          class="carphots img-responsive">
+          <div class="favorite">
+            <p>トヨタ<br>アルファードハイブリ…</p>
+              <div class="favoritebtn" id="button2">
+                <p>お気に入りに<br>追加</p>
+                <img src="assets/img/icon/pinUncheck.png" alt="pin" class="img-responsive">
+              </div>
+          </div>
+          <a href="#">
+            <div class="look">詳細を見る
+                <img src="assets/img/icon/arrowRightSlideButton.png">
+              </div>
+            </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="assets/img/catalog/slideshow/car3.png"
+          alt="car3"
+          class="carphots img-responsive">
+          <div class="favorite">
+            <p>トヨタ<br>ハリアープレミアム</p>
+              <div class="favoritebtn" id="button3">
+                <p>お気に入りに<br>追加</p>
+                <img src="assets/img/icon/pinUncheck.png" alt="pin" class="img-responsive">
+              </div>
+          </div>
+          <a href="#">
+            <div class="look">詳細を見る
+                <img src="assets/img/icon/arrowRightSlideButton.png">
+              </div>
+            </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="assets/img/catalog/slideshow/car4.png"
+          alt="car4"
+          class="carphots img-responsive">
+          <div class="favorite">
+            <p>トヨタ<br>ハイラックスサーフ</p>
+              <div class="favoritebtn" id="button4">
+                <p>お気に入りに<br>追加</p>
+                <img src="assets/img/icon/pinUncheck.png" alt="pin" class="img-responsive">
+              </div>
+          </div>
+          <a href="#">
+            <div class="look">詳細を見る
+                <img src="assets/img/icon/arrowRightSlideButton.png">
+              </div>
+            </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="assets/img/catalog/slideshow/car10.png"
+          alt="car5"
+          class="carphots img-responsive">
+          <div class="favorite">
+            <p>ホンダ<br>CITY</p>
+              <div class="favoritebtn" id="button5">
+                <p>お気に入りに<br>追加</p>
+                <img src="assets/img/icon/pinUncheck.png" alt="pin" class="img-responsive">
+              </div>
+          </div>
+          <a href="#">
+            <div class="look">詳細を見る
+                <img src="assets/img/icon/arrowRightSlideButton.png">
+              </div>
+            </a>
+      </div>
+    </div>
+  </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+ <!-- Swiper2 END -->
+</div>
+
+<div class="container">
+<div class="research row">
+  <div class="leftarea col-12 col-md-6">
+    <div class="leftbg">
+    <h1>車種から探す</h1>
+    
+    <div class="container">
+      <div class="row">
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car1.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>軽自動車</p>
+                <label class="check-box" for="check01">
+                  <input type="checkbox" id="check01">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car2.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>コンパクトカー</p>
+                <label class="check-box" for="check02">
+                  <input type="checkbox" id="check02">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car3.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>ミニバン</p>
+                <label class="check-box" for="check03">
+                  <input type="checkbox" id="check03">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car4.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>セダン</p>
+                <label class="check-box" for="check04">
+                  <input type="checkbox" id="check04">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car5.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>クーベ</p>
+                <label class="check-box" for="check05">
+                  <input type="checkbox" id="check05">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car6.png"
+              alt="car6" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>ステーションワゴン</p>
+                <label class="check-box" for="check06">
+                  <input type="checkbox" id="check06">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car7.png"
+              alt="car7" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>SUV・クロカン</p>
+                <label class="check-box" for="check07">
+                  <input type="checkbox" id="check07">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car8.png"
+              alt="car8" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>オープンカー</p>
+                <label class="check-box" for="check08">
+                  <input type="checkbox" id="check08">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="carmodel col-12 col-md-6 col-lg-4">
+            <div class="carmodelimg">
+              <div><img src="assets/img/catalog/content/car9.png"
+              alt="car1" class="img-responsive"></div>
+              <div class="carmodelcheck">
+                <p>ワンボックス</p>
+                <label class="check-box" for="check09">
+                  <input type="checkbox" id="check09">
+                  <span class="check-text"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+  </div>
+    
+      <div class="leftoption">
+        <h2>オプション検索</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-xl-6">
+          <label>メーカー</label>
+            <select class="pulldown">
+              <option value="nissan">ニッサン</option>
+              <option value="honda">ホンダ</option>
+              <option value="matsuda">マツダ</option>
+              <option value="toyota">トヨタ</option>
+              <option value="daihatsu">ダイハツ</option>
+              <option value="suzuki">スズキ</option>
+            </select>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <label class="displacement_left">排気量</label>
+              <select class="pulldown displacement_left">
+                <option value="660cc">660cc</option>
+                <option value="1000cc">1000cc</option>
+                <option value="2000cc">2000cc</option>
+                <option value="3000cc">3000cc</option>
+                <option value="4000cc以上">4000cc以上</option>
+              </select>
+            </div>
+        </div>
+      </div>
+        
+
+        <div class="togglebtn">
+          <div><label>AT/MT</label></div>
+          <div class="can-toggle">
+            <input id="a" type="checkbox">
+            <label for="a">
+              <div class="can-toggle__switch" data-checked="MT" data-unchecked="AT"></div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="researchbtn">
+        <a href="#">
+      <div class="btn">この条件で探す
+          <img src="assets/img/icon/arrowButton.png" class="arrowButton">
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <div class="rightarea col-12 col-md-6">
+      <div class="makerresearch">
+        <h1>メーカーから探す</h1>
+        <div class="container">
+          <div class="row">
+            <div class="carmodelselect col-lg-12 col-xl-6">
+              <label>メーカー</label>
+                <select class="pulldown">
+                  <option value="nissan">ニッサン</option>
+                  <option value="honda">ホンダ</option>
+                  <option value="matsuda">マツダ</option>
+                  <option value="toyota">トヨタ</option>
+                  <option value="daihatsu">ダイハツ</option>
+                  <option value="suzuki">スズキ</option>
+                </select>
+              </div>
+              <div class="col-lg-12 col-xl-6">
+              <label class="carmodel_label">車種</label>
+                <select>
+                  <option value="nissan">軽自動車</option>
+                  <option value="toyota">コンパクトカー</option>
+                  <option value="matsuda">ミニバン</option>
+                  <option value="daihatsu">セダン</option>
+                  <option value="suzuki">クーべ</option>
+                  <option value="suzuki">ステーションワゴン</option>
+                  <option value="suzuki">SUV・クロカン</option>
+                  <option value="suzuki">オープンカー</option>
+                  <option value="suzuki">ワンボックス</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="container rightcheckbox">
+              <div class="row">
+                  <div class="carmodel col-12 col-md-6 col-lg-4">
+                    <div class="carmodelimg">
+                      <div><img src="assets/img/catalog/content/car1.png"
+                      alt="car10" class="img-responsive"></div>
+                      <div class="carmodelcheck">
+                        <p>デイズ ルークス</p>
+                        <label class="check-box" for="check10">
+                          <input type="checkbox" id="check10">
+                          <span class="check-text"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carmodel col-12 col-md-6 col-lg-4">
+                    <div class="carmodelimg">
+                      <div><img src="assets/img/catalog/content/car2.png"
+                      alt="car11" class="img-responsive"></div>
+                      <div class="carmodelcheck">
+                        <p>デイズ</p>
+                        <label class="check-box" for="check11">
+                          <input type="checkbox" id="check11">
+                          <span class="check-text"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carmodel col-12 col-md-6 col-lg-4">
+                    <div class="carmodelimg">
+                      <div><img src="assets/img/catalog/content/car3.png"
+                      alt="car12" class="img-responsive"></div>
+                      <div class="carmodelcheck">
+                        <p>クリッパー</p>
+                        <label class="check-box" for="check12">
+                          <input type="checkbox" id="check12">
+                          <span class="check-text"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <h2>オプション検索</h2>
+          <div class="carmodelselect displacement">
+            <label>排気量</label>
+              <select class="displacement_right">
+                <option value="660cc">660cc</option>
+                <option value="1000cc">1000cc</option>
+                <option value="2000cc">2000cc</option>
+                <option value="3000cc">3000cc</option>
+                <option value="4000cc以上">4000cc以上</option>
+              </select>
+            </div>
+          <div class="togglebtn">
+            <div><label>AT/MT</label></div>
+            <div class="can-toggle">
+              <input id="b" type="checkbox">
+              <label for="b">
+                <div class="can-toggle__switch" data-checked="MT" data-unchecked="AT"></div>
+              </label>
+            </div>
+          </div>
+  
+          <div class="researchbtn">
+            <a href="#">
+          <div class="btn">この条件で探す
+              <img src="assets/img/icon/arrowButton.png" class="arrowButton">
+            </div>
+          </a>
+        </div>
+
+        </div>
+  
+      <div class="freeresearch">
+        <h1>フリーワード検索</h1>
+          <div class="freetext">
+            <input type="text">
+          </div>
+          <div class="researchbtn">
+            <a href="#">
+              <div class="btn">検索
+                  <img src="assets/img/icon/arrowButton.png" class="arrowButton">
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="noticearea">
+  <div class="noticetitle">
+    <h1>お知らせ</h1>
+      <div class="btn"><a href="#">一覧はこちら</a>
+      </div>
+  </div>
+
+  <div class="notice">
+    <div class="details">
+      <div class="contents">
+        <p>2017/01/01<br>タイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
+      </div>
+      <div>
+        <a href="#">
+        <img src="assets/img/icon/arrowRight.png" alt="arrowRight" class="contentsimg">
+        </a>
+        </div>
+    </div>
+  </div>
+  <div class="notice">
+    <div class="details">
+      <div class="contents">
+        <p>2017/01/01<br>タイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
+      </div>
+      <div>
+        <a href="#">
+        <img src="assets/img/icon/arrowRight.png" alt="arrowRight" class="contentsimg">
+        </a>
+        </div>
+    </div>
+  </div>
+  <div class="notice">
+    <div class="details">
+      <div class="contents">
+        <p>2017/01/01<br>タイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
+      </div>
+      <div>
+        <a href="#">
+        <img src="assets/img/icon/arrowRight.png" alt="arrowRight" class="contentsimg">
+        </a>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="footermenu">
+    <div class="address">
+        <a href="index.html"><img src="assets/img/logo/tc-white-logo.svg" alt="logo"></a>
+        <p>〒000-0000<br>
+        〇〇県〇〇〇市〇〇〇〇0-0-0<br>
+        〇〇ビル　〇F</p>
+    </div>
+    <div class="menudetail">
+        <ul class="list1">
+          <li><a href="#" >試乗車検索</a></li>
+          <li><a href="#" >お気に入り一覧</a></li>
+          <li><a href="#" >お知らせ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" >サービスについて</a></li>
+          <li><a href="#" >プライバシーポリシー</a></li>
+          <li><a href="#" >利用規約</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <small>Copylight</small>
+</footer>
+
+<a href="#" id="to_top">
+  <img src="assets/img/icon/backToTop.png">
+</a>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
+</body>
+</html>

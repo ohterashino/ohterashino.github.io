@@ -431,9 +431,10 @@ header a {
 select {
   height: 35px;
   padding-left: 5px;
-  width: 140px;
+  width: 160px;
   -webkit-appearance: none;
   appearance: none;
+  font-size: 13px;
 }
 
 select::-ms-expand {
@@ -548,16 +549,16 @@ select {
 }
 
 .can-toggle label {
-  font-size: 12px;
+  font-size: 15px;
 }
 .can-toggle label .can-toggle__switch {
   height: 36px;
-  flex: 0 0 140px;
+  flex: 0 0 160px;
   border-radius: 15px;
 }
 .can-toggle label .can-toggle__switch:before {
-  left: 67px;
-  font-size: 12px;
+  left: 85px;
+  font-size: 15px;
   line-height: 32px;
   width: 70px;
   padding: 0 12px;
@@ -566,10 +567,10 @@ select {
   top: -1px;
   left: -1px;
   border-radius: 15px;
-  width: 70px;
+  width: 90px;
   height: 36px;
   line-height: 32px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* --------- Toggle button End --------- */

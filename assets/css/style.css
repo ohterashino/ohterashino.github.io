@@ -323,6 +323,7 @@ header a {
   cursor: pointer;
   width: 115px;
   height: 50px;
+  z-index: 998;
 }
 
 .favoritebtn img {
@@ -697,9 +698,8 @@ select {
 }
 
 .address {
-  padding-right: 70px;
-  padding-left: 10px;
   font-size: 17px;
+  width: 288px;
 }
 
 .address p {
@@ -712,19 +712,17 @@ select {
 }
 
 .menudetail ul {
-  margin: 50px 0 20px 0;
-  padding: 0px 20px;
+  margin-top: 50px;
+  padding: 0px;
 }
 
 .menudetail ul li {
   list-style: none;
   font-size: 12px;
   padding-bottom: 8px;
+  width: 120px;
 }
 
-/* .menudetail ul + ul {
-  padding-right: 120px;
-} */
 
 .menudetail ul li a {
   text-decoration: none;
@@ -750,7 +748,7 @@ footer {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  z-index: 50;
+  z-index: 999;
   opacity: 0;
   transition: opacity .3s;
 }
@@ -946,9 +944,27 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width:576px) {
+  .noticetitle .btn {
+      font-size: 1rem;
+      background-image: url(../img/icon/buttonSpec.png);
+      background-size: 150px 60px;
+      background-position: bottom 2px;
+      color: #ffffff;
+      height: 60px;
+      width: 150px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+@media (max-width: 767px) {
   .menudetail ul {
-    margin: 50px 0px 20px 0px;
+    margin: 0px;
     padding: 0px 5px;
   } 
   
@@ -984,3 +1000,19 @@ footer {
 }
 
 
+
+/* demo */
+
+
+.main {
+  display: flex;
+  width: 150px;
+  height: 60px;
+  font-size:  13px;
+}
+
+
+.main img {
+  width: 24px;
+  height: 24px;
+}

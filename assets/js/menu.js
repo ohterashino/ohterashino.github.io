@@ -1,5 +1,4 @@
 'use strict';
-{
  
 	// Hamburger menu
 	const open = document.getElementById('open');
@@ -38,22 +37,14 @@ var mySwiper = new Swiper('.swiper1', {
 
 // swiper2
 const swiper = new Swiper(".swiper2", {
-  loop: true,
-  spaceBetween: 20,
-  slidesPerView: 4,
-	breakpoints: {
-		1140: {
-			slidesPerView: 4
-		},
-    960: {
-			slidesPerView: 3
-		},
-    540: {
-			slidesPerView: 2
-		},
-		0: {
-			slidesPerView: 1
-		}
+		loop: true,
+		spaceBetween: 20,
+		slidesPerView: 4,
+		breakpoints: {
+		1140: {slidesPerView: 4},
+    960: 	{slidesPerView: 3},
+    540: 	{slidesPerView: 2},
+		0: 		{slidesPerView: 1}
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -69,50 +60,31 @@ const swiper = new Swiper(".swiper2", {
 // swiper2 favorite_btn
 
 document.addEventListener('DOMContentLoaded',()=>{
-
-	let changeData = {
-		'button1' : {
-			txt:'お気に入り<br />解除',
-			img:'assets/img/icon/pinCheck.png'
-		} ,
-		'button2' : {
-			txt:'お気に入り<br />解除',
-			img:'assets/img/icon/pinCheck.png'
-		} ,
-		'button3' : {
-			txt:'お気に入り<br />解除',
-			img:'assets/img/icon/pinCheck.png'
-		} ,
-		'button4' : {
-			txt:'お気に入り<br />解除',
-			img:'assets/img/icon/pinCheck.png'
-		} ,
-		'button5' : {
-			txt:'お気に入り<br />解除',
-			img:'assets/img/icon/pinCheck.png'
-		}
-	};
-	
-	document.querySelectorAll('.favoritebtn').forEach(btn=>{
-		let id = btn.id;
-		let txt = btn.querySelector('p'); 
-		let img = btn.querySelector('img'); 
-		let flg = false;
-		let df = {
-			txt: txt.innerHTML,
-			img: img.src
-		};
-		btn.addEventListener('click',()=>{
-			let data = flg ? df : changeData[id];
-	
-			txt.innerHTML = data.txt;
-			img.src = data.img;
-			flg = !flg;
+  
+	//   複数のフラグを管理するための配列を定義
+		let flags = [];
+	//   対象となる要素の配列を取得し、forEachでそれぞれをelementという変数に代入しつつ中の関数を繰り返す
+		document.querySelectorAll('.favoritebtn').forEach(element=>{
+	//     フラグ配列に要素を追加し、それをフラグという変数に代入
+			let flag = flags.push(false);
+			let txt = element.querySelector('p'); 
+			let img = element.querySelector('img'); 
+	//     要素がクリックされたら
+			element.addEventListener('click',()=>{
+	//       フラグがtrueの場合はON, falseの場合はOFFにinnerHTMLを変更
+	if(flag){
+		txt.innerHTML = 'お気に入り<br>解除';
+		img.src = 'assets/img/icon/pinCheck.png';
+	} else {
+		txt.innerHTML = 'お気に入りに<br>追加';
+		img.src = 'assets/img/icon/pinUncheck.png';
+	}
+	//       フラグの真偽値を反転させる
+				flag = !flag;
+			});
 		});
+		
 	});
-	
-	});
-
 
 // swiper2 favorite_btn End
 
@@ -163,4 +135,12 @@ toTop.addEventListener('click', e => {
 // scrolle icon End
 
 
-}
+
+
+// ---------- demo ---------
+
+
+
+
+
+
